@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="login">
+    <button id="loginButton" onclick="window.location.href='login.html'">Login</button>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Enter city name" id="cityInput" spellcheck="false">
+    <button id="searchButton"><img src="images/search.png"></button>
+  </div>
+
+  <div class="weather">
+    <img src="images/rain.png" class="weather-icon" id="weatherIcon">
+
+    <h1 class="temp" id="temperature">22°c</h1>
+    <h2 class="city" id="cityName">New York</h2>
+
+    <div class="details">
+      <div class="col1">
+        <img src="images/humidity.png">
+        <div>
+          <p class="humidity" id="humidity">50%</p>
+          <p>Humidity</p>
+        </div>
+      </div>
+
+      <div class="col2">
+        <img src="images/wind.png">
+        <div>
+          <p class="wind" id="windSpeed">15km/hr</p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
